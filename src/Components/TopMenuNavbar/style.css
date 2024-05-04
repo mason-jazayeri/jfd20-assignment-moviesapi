@@ -1,0 +1,11 @@
+.navbar {
+	padding-right: 18rem;
+}
+
+.navbar ul {
+	display: flex;
+	gap: 3rem;
+}
+
+.navbar ul li {
+}

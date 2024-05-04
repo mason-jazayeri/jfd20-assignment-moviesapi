@@ -1,0 +1,55 @@
+.top-movies-list {
+}
+
+.top-movies-list .list-title {
+}
+
+.top-movies-list .list-title h4 {
+}
+
+.top-movies-list .list-title a {
+}
+
+.top-movies-list .list-items {
+}
+
+.top-movies-list .list-items ul {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	background-color: #ddd;
+	border-radius: 0.5rem;
+	padding: 1rem;
+}
+
+.top-movies-list .list-items ul li {
+	border-radius: 0.5rem;
+}
+
+.top-movies-list .list-items ul li a {
+	display: block;
+}
+
+.top-movies-list .list-items ul li a .top-movie-item {
+	width: 11rem;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	background-color: #fff;
+	padding: 0.5rem;
+	border-radius: 0.5rem;
+}
+
+.top-movies-list .list-items ul li a .top-movie-item .item-poster {
+	min-height: 16rem;
+}
+
+.top-movies-list .list-items ul li a .top-movie-item .item-poster img {
+	display: block;
+	width: 100%;
+	border-radius: 0.5rem;
+}
+
+.top-movies-list .list-items ul li a .top-movie-item h5 {
+	min-height: 9rem;
+}

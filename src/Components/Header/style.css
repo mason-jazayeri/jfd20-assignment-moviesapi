@@ -1,0 +1,28 @@
+.header {
+	background-color: #666;
+}
+
+.header .header-container {
+	display: flex;
+	align-items: center;
+}
+
+.header .header-container .logo {
+	padding-right: 6rem;
+}
+
+.header .header-container .logo a {
+	color: #fff;
+}
+
+.header .header-container .logo a h1 {
+}
+
+.header .header-container .search-bar {
+	display: flex;
+	flex: 1;
+}
+
+.header .header-container .search-bar input {
+	flex: 1;
+}

@@ -1,0 +1,25 @@
+.movie-item {
+	display: flex;
+	gap: 4rem;
+}
+
+.movie-item .item-poster {
+	width: 35rem;
+}
+
+.movie-item .item-poster img {
+	display: block;
+	width: 100%;
+	border-radius: 0.5rem;
+	box-shadow: 5px 3px 10px 0px rgba(102, 102, 102, 1);
+}
+
+.movie-item .item-content {
+	width: 40rem;
+}
+
+.movie-item .item-content h2 {
+}
+
+.movie-item .item-content p {
+}
