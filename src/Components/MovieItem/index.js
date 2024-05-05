@@ -14,9 +14,8 @@ function MovieItem() {
 	});
 	const { title, plot, poster } = data;
 
-	const [movieTitle, setMovieTitle] = useState();
 	function handleLoad() {
-		renderPageTitle(movieTitle);
+		renderPageTitle(title);
 	}
 
 	useEffect(
@@ -27,7 +26,6 @@ function MovieItem() {
 				)
 				.then(function (res) {
 					setData(res.data);
-					setMovieTitle(res.data.title);
 					console.log(res.data);
 				})
 				.catch(function (err) {
@@ -36,6 +34,7 @@ function MovieItem() {
 		},
 		[movieId]
 	);
+
 	return (
 		<div className="movie-item" onLoad={handleLoad}>
 			<div className="item-poster">
