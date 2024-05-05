@@ -23,6 +23,34 @@
 	flex: 1;
 }
 
-.header .header-container .search-bar input {
+.header .header-container .search-bar .input-box {
+	display: flex;
 	flex: 1;
+	position: relative;
+	left: 0;
+	top: 0;
+}
+
+.header .header-container .search-bar .input-box input {
+	padding: 3px 2px;
+	flex: 1;
+}
+
+.header .header-container .search-bar .input-box .search-resault-box {
+	position: absolute;
+	left: 0;
+	top: 100%;
+	width: 100%;
+	background-color: #fff;
+	border: 1px solid #666;
+}
+
+.header .header-container .search-bar .input-box .search-resault-box ul {
+}
+
+.header .header-container .search-bar .input-box .search-resault-box ul li {
+	padding: 3px 2px;
+}
+
+.header .header-container .search-bar button {
 }

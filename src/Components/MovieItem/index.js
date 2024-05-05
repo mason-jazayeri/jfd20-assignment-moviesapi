@@ -1,10 +1,10 @@
-import { Fragment } from "react";
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import renderPageTitle from "../../helpers/renderPageTitle";
 import "./style.css";
 
-function MovieItem({ sendDataToSingleMovieItemPage }) {
+function MovieItem() {
 	const { movieId } = useParams();
 
 	const [data, setData] = useState({
@@ -16,11 +16,11 @@ function MovieItem({ sendDataToSingleMovieItemPage }) {
 
 	const [movieTitle, setMovieTitle] = useState();
 	function handleLoad() {
-		sendDataToSingleMovieItemPage(movieTitle);
+		renderPageTitle(movieTitle);
 	}
 
-	useEffect(function () {
-		{
+	useEffect(
+		function () {
 			axios
 				.get(
 					`https://moviesapi.codingfront.dev/api/v1/movies/${movieId}`
@@ -33,12 +33,13 @@ function MovieItem({ sendDataToSingleMovieItemPage }) {
 				.catch(function (err) {
 					console.log(err);
 				});
-		}
-	}, []);
+		},
+		[movieId]
+	);
 	return (
 		<div className="movie-item" onLoad={handleLoad}>
 			<div className="item-poster">
-				<img src={poster} />
+				<img src={poster} alt="" />
 			</div>
 			<div className="item-content">
 				<h2>{title}</h2>

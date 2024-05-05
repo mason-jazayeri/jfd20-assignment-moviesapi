@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import TopMenuNavbar from "../TopMenuNavbar";
+import SearchMovie from "../SearchMovie";
 import "./style.css";
 
 function Header() {
@@ -13,10 +14,7 @@ function Header() {
 						</Link>
 					</div>
 					<TopMenuNavbar />
-					<div className="search-bar">
-						<input />
-						<button>Search</button>
-					</div>
+					<SearchMovie />
 				</div>
 			</div>
 		</div>
